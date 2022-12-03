@@ -1,2 +1,2 @@
-# portfolio
-Olá! Estou desenvolvendo este portfolio de acordo com o conhecimento teórico que venho aprendendo nos últimos 6 meses. Como estou desenvolvendo meu portfolio, a escrita do código é sob minha responsabilidade. Dessa forma, não há cópias de cursos livres ou vídeos. Assim, consigo aprender de uma forma assertiva.
+#CriandoMeuPortfolio
+Olá! Estou desenvolvendo este portfolio de acordo com o conhecimento teórico que aprendi - e pratiquei - nos últimos 6 meses. Dessa forma, não há cópias de código de cursos livres ou vídeos-aulas. Sendo assim, através desse projeto, estou tentando aplicar a semântica correta do HTML, da forma mais enxuta possível. 
