@@ -10,6 +10,8 @@
     margin: 0 auto; /*deixa o conteúdo centralizado*/
     max-width: 1024px; /*comprime o conteúdo no centro*/
     padding: 1rem;
+    width: 100vw;
+    height: 130vh;
 }
 /*start menu*/
 .header-content{
@@ -79,8 +81,6 @@ li:hover{
 /*start hero*/
 
 .header-top-content{
-    width: 100vw;
-    height: 100vh;
     display: flex;
     margin-top: 48px;
 }
@@ -125,19 +125,25 @@ li:hover{
     background: #9037D7;
     border-radius:  20px;
     border: solid #9037D7;
-    box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(1px 2px 1px rgba(12, 54, 194, 0.075));
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
     color: #FDFDFD;
     letter-spacing: 0.085em;
+    cursor: pointer;
+}
+#btn-left:hover{
+    background-color: #672a99;
+    border: #672a99;
+    transition: .5s;
 }
 
 #btn-right{
     width: 200px;
     height: 50px;
-    filter: drop-shadow(5px 10px 80px rgba(0, 0, 0, 0.692));
+    filter: drop-shadow(1px 2px 1px rgba(12, 54, 194, 0.075));
     background: #F8F8F8;
     border-radius: 20px;
     border: 3px solid #F8F8F8;
@@ -147,7 +153,14 @@ li:hover{
     font-size: 15px;
     color: #292929;
     letter-spacing: 0.085em;
+    cursor: pointer;
 
+}
+
+#btn-right:hover{
+    background-color: #d1cccc;
+    border: #dad6d6;
+    transition: .5s;
 }
 .header-buttom-content-left{
     height: 40vh;
@@ -161,24 +174,32 @@ li:hover{
 }
 
 
-#text-before-cards{
+.text-before-cards{
     margin-top: 48px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
     line-height: 30px;
     color: #931096;
     display: flex;
 }
 
+#link-button-left{
+    text-decoration: none;
+    color: #F8F8F8;
+}
+#link-button-right{
+    text-decoration: none;
+    color: #292929;
+}
 .cards{
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .card{
+    width: 15vw;
     display: flex;
     flex-direction: row;
 }
@@ -195,7 +216,7 @@ li:hover{
 
 .header-buttom-content-left .card > p{
     color: #8A8A8A;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.4rem;
 }
 
@@ -209,9 +230,106 @@ li:hover{
     width: 50vw;
     margin-right: 48px;
 }
+/*-----------------------------------------------------------*/
+/*seção de cards indicando como funciona a criacao do conteudo*/
+.content-section-how-we-work{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /*deixa o conteúdo centralizado*/
+    max-width: 1024px; /*comprime o conteúdo no centro*/
+    padding: 1rem;
+    width: 100vw;
+}
+.end-content-line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-before-cards-2 p{
+    margin-top: 16px;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    color: #931096;
+}
+
+.text-before-cards-2 h3{
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.time-line{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    gap: 10px;
+}
+
+.img-timeline{
+    width: 10vw;
+    height: 10vh;
+}
+.card-process{
+    width: 75vw;
+    display: flex;
+    
+}
+.img-cards{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.title-cards{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 75px;
+}
+
+.title-cards h3{
+    background: radial-gradient(49.62% 1813.64% at 17.29% 50%, #1F2FBB 0%, #931096 52.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
 
 
 
+.paragraph-cards{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 25px;
+    color: #292929;
+    line-height: 2.5rem;
+    margin-top: 36px;
+}
+
+.title-cards button{
+    margin-top: 50px;
+    width: 350px;
+    height: 50px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 20px;
+    background: #9037D7;
+    box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.25);
+    border: #9037D7;
+    color: #FDFDFD;
+    cursor: pointer;
+}
+.title-cards button:hover{
+    background-color: #6b28a1 ;
+}
 
 
 
@@ -227,11 +345,11 @@ li:hover{
     }
 
     .header-top-content h1{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .header-top-content p{
-        font-size: 1.2rem;
+        font-size: .9rem;
         line-height: 1.5rem;
     }
 
@@ -247,5 +365,82 @@ li:hover{
         width: 150px;
         font-size: .7rem;
     }
+    .header-buttom-content-left {
+        width: 100vw;
+        height: 1200px;
+    }
     
+    .cards{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .cards > img {
+        width: 2px;
+        height: 250px;
+        opacity: .40;
+    }
+
+    .card{
+        width: 200px;
+    }
+
+    .img-timeline img{
+        width: 10px;
+        height: 2800px;
+    }
+    .content-section-how-we-work{
+        max-width: 600px;
+        padding: 2rem;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .text-before-cards p{
+        font-size: 1rem;
+    }
+    .title-cards h3{
+        margin-top: 24px;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .text-before-cards-2 h3{
+        font-size: 1.5rem;
+    }
+
+    .text-before-cards-2 p{
+        font-size: 1rem;
+    }
+
+    .title-cards button{
+        width: 300px;
+        height: 60px;
+    }
+
+    .card-process{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 100vw;
+
+    }
+    .card-process img{
+        width: 250px;
+        height: 200px;
+    }
+
+    .card-process p{
+        font-size: 1.5rem;
+    }
+
+    .end-content-line {
+        margin-top: 24px;
+        align-items: center;
+    }
+    .end-content-line img{
+        width: 250px;
+        height: 2px;
+    }
 }
+
