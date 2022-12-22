@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Poppins:wght@400;500;600;800&display=swap');
+
+
+#header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto; 
+    max-width: 1024px;
+    padding: 1rem;
+}
+
+#logo{
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: #515151;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.link{
+    text-decoration: none;
+    color: #363636;
+}
+
+.link:hover{
+    color: #405fe7;
+}
+
+#logo span{
+    color: #405fe7;
+    font-size: 3rem;
+}
+
+#btn-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    width: 145px;
+    height: 40px;
+    background: #405fe7;
+    border-radius: 10px;
+    text-align: center;
+    color: #f9f5f5;
+    font-weight: 500;
+}
+
+#btn-contact:hover, .btn:hover{
+    background: #2ceb6c;
+    border: none;
+    color: rgb(39, 39, 39);
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 3rem;
+    font-family: 'Inter';
+}
+
+
+li{
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#home{
+    color: #405fe7;
+    font-weight: 600;
+}
+
