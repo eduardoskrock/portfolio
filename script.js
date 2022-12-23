@@ -1,14 +1,14 @@
+let menuOpen = false;
+const button = document.querySelector('nav ul.button-menu-mobile');
+const menu = document.querySelector('nav ul.menu');
 
-//constante com nome sections que vai selecionar o documento que estiver com .js-scroll
-const sections = document.querySelectorAll('.js-scroll');
+button.addEventListener('click', () => {
+    if (!menuOpen) {
+        menu.style.display = 'flex';
+        menuOpen = true;
+    } else {
+        menu.style.display = 'none';
+        menuOpen = false;
+    }
 
-//funcao que vai animar o scroll
-
-function animaScroll() {
-    sections.forEach((section) => {
-        const  sectionTop = section.getBoundingClientRect().top;
-        console.log(sectionTop);
-    })
-}
-
-window.addEventListener('scroll', animaScroll)
+})
