@@ -11,6 +11,7 @@
     --gray-2: #808080;
     --pink: #df0ac2;
     --white: #fdfdfd;
+    overflow-x: hidden;
 
 }
 
@@ -23,6 +24,7 @@
     padding: 1rem;
     width: 100vw;
     height: 100vh;
+    max-width: 1024px;
 }
 
 #hero-section-1{
@@ -206,3 +208,4 @@
         width: 90vw;
     }
 }
+
