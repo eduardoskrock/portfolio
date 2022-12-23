@@ -88,20 +88,8 @@
     flex-direction: row-reverse;
 }
 
-.btn-action-wrapper{
-    width: 100vw;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.btn-action {
-    display: flex;
-    justify-content: center;
-    width: 70vw;
-    height: 70px;
-}
+
 
 @media (max-width: 600px) {
     #section-3{
@@ -124,5 +112,15 @@
 
     .text-cards-wrapper-three{
         width: 100%;
+    }
+
+    .btn-wrapper-3{
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .btn-action{
+        width: 350px;
+        height: 70px;
     }
 }
