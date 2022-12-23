@@ -9,27 +9,23 @@
     --primary-gray: #363636;
     --gray-1: #7e7e7e;
     --gray-2: #808080;
-    --pink: #df0ac2;
+    --pink: #c744b5;
     --white: #fdfdfd;
     overflow-x: hidden;
 
 }
 
 .section-1{
-     background-image: url('Rectangle\ 45.png');
-    background-repeat: no-repeat;
-    background-size: contain;
     margin: 0 auto; /*deixa o conteúdo centralizado*/
     max-width: 1024px; /*comprime o conteúdo no centro*/
     padding: 1rem;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     max-width: 1024px;
 }
 
 #hero-section-1{
     width: 90vw;
-    height: 80vh;
     display: flex;
 }
 
@@ -40,7 +36,6 @@
 .text-left-side{
     display: flex;
     flex-direction: column;
-    height: 33vh;
     gap: 1.5rem;
 }
 
@@ -64,6 +59,7 @@
 .paragraph-before-title{
     color: var(--pink);
     font-weight: 600;
+    font-size: 1rem;
 }
 
 .btn-left-side{
@@ -72,6 +68,7 @@
     align-items: center;
 }
 .btn{
+    margin-top: 24px;
     width: 200px;
     height: 40px;
     flex-grow: 0;
@@ -96,25 +93,27 @@
 
 .btn-right:hover{
     background: var(--gray-1);
-    color: black;
+    border: var(--gray-1);
+    color: var(--white);
 }
 .cards-hero{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 30vh;
 }
 
 .card-wrapper{
+    margin-top: 30px;
     width: 100%;
-    height: 10vh;
+    height: 20vh;
     display: flex;
     gap: 3.3000000000000007rem;
 }
 
 .card-hero{
     width: 15vw;
-    height: 10vh;
+    height: 20vh;
 }
 
 .title-card-hero{
@@ -151,7 +150,6 @@
     .left-side-hero{
         display: flex;
         flex-direction: column;
-        height: 1000px;
         width: 90vw;
     }
 
