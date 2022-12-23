@@ -3,6 +3,12 @@
 
 /*-----------------------------------------------------------*/
 /*seção de cards indicando como funciona a criacao do conteudo*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
 #section-2{
     width: 100%;
     height: 270vh;
@@ -117,20 +123,18 @@
     padding: 1rem 2rem 2rem 2rem;
 }
 
-.btn-action{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    height: 10vh;
-    justify-content: center;
-
-    box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.25);
-}
 
 @media (max-width: 600px) {
 
+    #section-2{
+        height: 265vh;
+    }
+
+    .container-cards-section-two{
+        height: 200vh;
+    }
     .time-line-two{
-        height: 250vh;
+        height: 190vh;
         width: 2vw;
     }
     .card-two{
@@ -160,10 +164,9 @@
     }
 
     .btn-action-wrapper{
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        width: 100vw;
+
+
     }
 
     .btn-action-2{
@@ -185,4 +188,5 @@
     }
 
 
+    
 }
