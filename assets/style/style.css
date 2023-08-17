@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    margin: 0 auto;
+    background: #21252E;
+}
+
+ 
+@media screen and (min-width: 350px) and (max-width: 600px) {
+
+    h1{
+        font-family: 'Rubik';
+        color: #737373;
+    }
+    .btn-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background: #150D35;
+    }
+
+    .left-btn{
+        display: flex;
+        font-weight: 600;
+        width: 10rem;
+        height: 25px;
+        align-items: center;
+        background: #454e61;
+        border-radius: 20px 20px 20px 20px;
+        }
+    
+    .dark{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Rubik';
+        font-weight: 600;
+        color: rgb(219, 219, 219);
+        width: 6rem;
+        height: 25px;
+        background: #1E90FF;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .clean{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Rubik';
+        font-weight: 600;
+        color: rgb(155, 155, 155);
+        width: 6rem;
+        height: 25px;
+        background: #454e61;
+        border-radius: 10px 20px 20px 10px;
+    }
+    .right-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    #btn-mobile{
+        padding: .5rem;
+        background: #383838;
+        border-radius: 10px;
+        outline: none;
+    }
+
+    #menu{
+        display: none;
+        gap: 2rem;
+        margin-left: 1rem;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        background: #383838;
+        color: #FFFFFF;
+        font-family: 'Rubik';
+    }
+
+    #menu > li {
+        border-bottom: 1px solid black;
+    }
+
+    #nav.active #menu{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+
+    #hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 4px solid #8b8b8b;;
+
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin-top: .3rem;
+        background: #8b8b8b;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -9px;
+    }
+
+    .section-hero{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        border-radius: 30px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        background: #150D35;
+        padding: 1rem 1rem;
+        border-radius: 30px;
+    }
+
+    .greeting{
+        font-family: 'Rubik';
+        color: white;
+        font-weight: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        width: 25%;
+    }
+
+    .title-white{
+        color: white;
+        font-family: 'Rubik';
+        font-size: 1.6rem;
+    }
+
+    .description-content{
+        color: #8C8C8C;
+        font-family: 'Rubik';
+        font-size: 1.2rem;
+    }
+
+    .title-hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .contact{
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 2rem;
+    }
+
+    .text-white-accent{
+        color: #FFFFFF;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Rubik';
+        font-weight: 600;
+    }
+    #text-hero{
+        font-family: 'Rubik';
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .btn-hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background: #1E90FF;
+        border-radius: 20px;
+    }
+
+    .title-btn-hero{
+        font-family: 'Rubik';
+        font-size: 1rem;
+        font-weight: 700;
+        color: #b9b9b9;
+    }
+
+    .cta-hero{
+        font-family: 'Rubik';
+        font-size: .5rem;
+        color: #c4c4c4;
+        text-decoration: underline;
+    }
+
+    .jobs-section{
+        display: flex;
+    }
+
+    .container-job{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 150px;
+        padding: 1rem;
+    }
+
+    .right-side-job{
+        display: flex;
+        width: 20%;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: column;
+        background: #150D35;
+        border-radius: 20px;
+        padding: 1rem;
+    }
+
+    .left-side-job{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 20%;
+        background: #150D35;
+        border-radius: 20px;
+        padding: 1rem;
+    }
+
+    .bottom-side-job{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 20%;
+        background: #1E90FF;
+        border-radius: 20px;
+        padding: 1rem;
+    }
+
+    .title-jobs{
+        font-family: 'Rubik';
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+
+}
