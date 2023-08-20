@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="stylesheet" href="/assets/style/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
   
@@ -12,12 +13,8 @@
 
     <div class="btn-header">
 
-      <div class="left-btn">
 
-        <div class="dark">Dark</div>
-        <div class="clean">Clean</div>
-
-      </div>
+        <input type="checkbox">
 
       <div class="right-btn">
 
@@ -52,7 +49,7 @@
       
           <div class="title-hero">
 
-              <h2 class="title-white">Eduardo Skrock<br><span class="description-content">Desenvolvedor Front-end</span></h2>   
+              <h2 class="title-white">Eduardo Felipe<br><span class="description-content">Desenvolvedor Front end</span></h2>   
  
           </div>
 
@@ -60,14 +57,13 @@
 
             <div class="photo-myself">
 
-              <img src="assets/photos/myself.png" alt="">
+              <img src="/assets/photos/myself.jpg" alt="">
 
             </div>
 
-           <span id="text-hero">Fale Comigo</span>
-
             <div class="btn-hero">
-              <span class="title-btn-hero">Vamos<br>trabalhar<br>juntos?</span>
+              <span class="title-btn-hero">Enviar mensagem</span>
+              <span class="title-btn-hero border">Ver projetos</span>
             </div>
 
           </div>
@@ -76,28 +72,30 @@
     </section>
 
     <section class="jobs-section">
+      <h1 id="title-jobs">Confira meus projetos</h1>
 
-      <div class="container-job">
-
-        <div class="right-side-job">
-          <img src="assets/photos/arrow-2.svg" alt="">
-          <span class="title-jobs">Design</span>
+      <div class="container-jobs">
+        <div class="jobs">
+          <h2 class="title-jobs">Sites</h2>
+          <img src="assets/photos/arrow.svg" alt="">
         </div>
-
-        <div class="left-side-job">
-          <img src="assets/photos/arrow-2.svg" alt="">
-          <span class="title-jobs">Criativos</span>
+        <div class="jobs">
+          <h2 class="title-jobs">UI Design</h2>
+          <img src="assets/photos/arrow.svg" alt="">
         </div>
-
-        <div class="bottom-side-job">
-          <img src="assets/photos/arrow-2.svg" alt="">
-          <span class="title-jobs">Sites</span>
+        <div class="jobs">
+          <h2 class="title-jobs">Criativos</h2>
+          <img src="assets/photos/arrow.svg" alt="">
         </div>
 
       </div>
 
     </section>
 
-  <script src="script.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
