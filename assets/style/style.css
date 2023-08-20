@@ -5,7 +5,7 @@
     --color-second: #2C2B3C;
     --color-third: #1B2432;
     --color-fourth: #121420;
-    --color-fifth: #B76D68;
+    --color-fifth: #687db7;
     --color-sixth: #8B8B8B;
     --color-background-blur: #2c2b3cb3;
     --color-white: #f1f1f1;
@@ -20,6 +20,7 @@ body{
     background: var(--color-principal);
 }
 
+ 
 @media screen and (min-width: 350px) and (max-width: 600px) {
 
     h1{
@@ -33,6 +34,9 @@ body{
         padding: 1rem;
         background: var(--color-second);
     }
+
+
+
     input[type="checkbox"] {
         display: flex;
         align-items: center;
@@ -66,11 +70,14 @@ body{
         transition: .4s;
 
     }
+ 
+
     .right-btn{
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     #btn-mobile{
         padding: .5rem;
         background: var(--color-principal);
@@ -89,6 +96,7 @@ body{
         right: 0;
         background: rgba(44, 43, 60, 0.70);
         backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         color: #FFFFFF;
         font-family: 'Rubik';   
     }
@@ -244,14 +252,96 @@ body{
     .jobs{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background: var(--color-sixth);
-        border-radius: 20px;
+        border-radius: 10px;
         padding: 0 1rem;
+        height: 40px;
         cursor: pointer;
     }
     .title-jobs{
         font-family: 'Rubik';
         color: var(--color-white);
         font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .studies-section{
+        padding: 1rem;
+    }
+
+    .container-studies{
+        border-radius: 30px;
+        padding: 1rem;
+        background: var(--color-fourth);
+    }
+
+    .description-content{
+        font-size: 1rem;
+        font-family: 'Rubik';
+    }
+
+    .description-content.title{
+        font-size: 1.4rem;
+        color: var(--color-white);
+    }
+
+    .description-content.about{
+        color:  var(--color-sixth);
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .description-content.detail{
+        color: var(--color-fifth);
+    }
+
+    .section-experience{
+        padding: 1rem;
+    }
+
+    .container-experience{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        background: var(--color-fourth);
+        border-radius: 30px;
+    }
+
+    .company{
+        display: flex;
+        gap: 1rem;
+        background: var(--color-third);
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+    .description-experience{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-company{
+        font-family: 'Rubik';
+        font-size: .9rem;
+        color: #B76D68;
+    }
+
+    .title-experience{
+        font-family: 'Rubik';
+        color: var(--color-white);
+        font-size: 1.2rem;
+    }
+
+    .content-experience{
+        font-family: 'Rubik';
+        color: var(--color-sixth);
+        font-size: 1.2rem;
+    }
+
+    .content-experience.date{
+        font-size: 1rem;
+        text-align: center;
     }
 }
