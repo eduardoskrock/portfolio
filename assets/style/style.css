@@ -20,7 +20,6 @@ body{
     background: var(--color-principal);
 }
 
- 
 @media screen and (min-width: 350px) and (max-width: 600px) {
 
     h1{
@@ -34,9 +33,6 @@ body{
         padding: 1rem;
         background: var(--color-second);
     }
-
-
-
     input[type="checkbox"] {
         display: flex;
         align-items: center;
@@ -70,14 +66,11 @@ body{
         transition: .4s;
 
     }
- 
-
     .right-btn{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     #btn-mobile{
         padding: .5rem;
         background: var(--color-principal);
