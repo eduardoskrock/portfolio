@@ -14,7 +14,7 @@ let greetingMessage;
 
 if (currentHour >= 5 && currentHour < 12) {
   greetingMessage = 'Bom dia';
-} else if (currentHour >= 13 && currentHour < 18) {
+} else if (currentHour >= 12 && currentHour < 18) {
   greetingMessage = 'Boa tarde';
 } else {
   greetingMessage = 'Boa noite';
